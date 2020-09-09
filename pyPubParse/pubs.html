@@ -3,6 +3,7 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
     <!-- Time-stamp: "2003-09-20 17:28:05 Stephen Berczuk@ALEWIFE-BROOK"-->
     <link rel="stylesheet" type="text/css" href="../spb_site.css" title="Steve B Style Sheet"/>
@@ -64,20 +65,21 @@
         <!--/.nav-collapse -->
     </div>
 </div>
-<div class="bodytext">
+<div class="bodytext container-fluid">
     <div class="container theme-showcase" role="main">
         <div class="page-header">
             <h1>Publications</h1>
         </div>
         <h2>Books</h2>
-        <div data-record-type="book">
+        <div data-record-type="book" class="center-block">
 
-            <img align="left" height="140" width="112" src="/bookstore/cover/0201741172.01.MZZZZZZZ.jpg"
+            <img class="img-responsive" height="140" width="112" src="/bookstore/cover/0201741172.01.MZZZZZZZ.jpg"
                  alt="Software Configuration Management Patterns: Effective Teamwork, Practical Integration"/>
 
-            <a href="http://www.scmpatterns.com/">
+
+            <a  href="http://www.scmpatterns.com/">
                 <em>Software Configuration Management Patterns: Effective Teamwork, Practical Integration</em>
-            </a> which I wrote with
+            </a>  which I wrote with
             <a href="http://www.bradapp.net">Brad Appleton</a>.
 
         </div>
@@ -86,38 +88,51 @@
         <p>I have contributions in the following books</p>
         <ul>
             <li data-record-type="book-chapter">
-                <a class="book-chapter book-title"
+                <a class="book-chapter"
+                   href="https://amzn.to/3aIhGJz">
+                    97 Things Every Scrum Practitioner Should Know</a> (May 2020)
+            </li>
+            <li data-record-type="book-chapter">
+                <a class="book-chapter"
+                   href="https://amzn.to/3dY4O43">
+                    The Practitioners Handbook of Project Performance</a> (November 2019)
+            </li>
+            <li data-record-type="book-chapter">
+                <a class="book-chapter"
                    href="https://amzn.to/2Px18Jj">97
-                    Things Every Programmer Should Know: Collective Wisdom from the Experts</a>
-            </li>
-
-            <li data-record-type="book-chapter">
-                <a class="book-chapter book-title"
-                   href="https://amzn.to/2ryVmNN">Pattern
-                    Languages of Program Design 4 (Introduction)</a>
+                    Things Every Programmer Should Know: Collective Wisdom from the Experts</a> (Feb 2010)
             </li>
             <li data-record-type="book-chapter">
-                <a class="book-chapter book-title"
-                   href="https://amzn.to/2QPgXQ7">Pattern
-                    Languages of Program Design 2 (v. 2)</a>
-            </li>
-
-            <li data-record-type="book-chapter">
-                <a class="book-chapter book-title"
-                   href="https://amzn.to/2SL5G0M">Pattern Languages of Program Design</a>
-            </li>
-            <li data-record-type="book-chapter"><span class="author">Brad Appleton</span> and <span class="author">Steve Berczuk</span>:
-
+                <a href="http://www.amazon.com/exec/obidos/ASIN/0321117662/steveberczuk">Configuration
+                    Management
+                    Principles and Practice</a> (Jan 2003):
                 <a href="http://www.scmpatterns.com/pubs/hass_sidebar.html">Appendix</a> on Agile Software
-                Configuration Management, for Anne Mette Jonassen Hass' book
-                <em>
-                    <a href="http://www.amazon.com/exec/obidos/ASIN/0321117662/steveberczuk">Configuration
-                        Management
-                        Principles and Practice</a>
-                </em>.
+                Configuration Management, for Anne Mette Jonassen Hass' book, writtern with <span class="author">Brad Appleton</span>
             </li>
+            <li data-record-type="book-chapter">
+                <a class="book-chapter"
+                   href="https://amzn.to/2ryVmNN">Pattern
+                    Languages of Program Design 4 (Introduction)</a> (Dec 1999)
+            </li>
+            <li data-record-type="book-chapter">
+                <a class="book-chapter"
+                   href="https://amzn.to/2QPgXQ7">Pattern
+                    Languages of Program Design 2 (v. 2)</a> (June 1996)
+            </li>
+
+            <li data-record-type="book-chapter">
+                <a class="book-chapter"
+                   href="https://amzn.to/2SL5G0M">Pattern Languages of Program Design</a> (May 1995)
+            </li>
+
         </ul>
         <a name="PATTERNS" href="#TOP"></a>
+
+        <h2>Recurring Publications</h2>
+    <ul>
+        <li> <a href="http://www.techwell.com/users/steve-berczuk">My Articles on Techwell</a></li>
+        <li><a href="https:/>/blog.berczuk.com">Accidental Simplicity</a></li>
+    </ul>
 
         <h2>Agility, Agile SCM, Patterns and Pattern Languages</h2>
         <!-- TODO put remote links with the publication. remove dead links -->
@@ -129,13 +144,13 @@
                        title="From Agile Requirements to Agile Code">From Agile Requirements to Agile Code</a> An
                     Executive
                     Update published by the Cutter Consortium.
-                    <time class="pub-date" datetime="2012-03">March 2012</time>
+                    <time datetime="2012-03">March 2012</time>
                 </li>
                 <li data-record-type="article">
                     <a class="url-src title" href="http://www.techwell.com/articles/original/agile-code-agile-teams"
                        title="Agile Code For Agile Teams">Agile Code for Agile Teams</a> a
                     <a class="publication" href="http://www.techwell.com"> Techwell</a> original article. Published
-                    <time class="pub-date" data-type="pub-date" datetime="2012-02-29">29 Feb 2012</time>
+                    <time datetime="2012-02-29">29 Feb 2012</time>
                     [
                     <a class="url-local" href="2012/techwell-2012-02-29.pdf" title="">Local PDF</a> ].
                 </li>
@@ -143,13 +158,13 @@
                     <a class="url-src title" href="2011/Berczuk-2011-cutter-GeneralizingSpecialists.pdf"
                        title="Generalists, Specialists, and Generalizing Specialists">Generalists, Specialists, and
                         Generalizing Specialists</a> An Executive Update published by the Cutter Consortium.
-                    <time class="pub-date" data-type="pub-date" datetime="2011-08">August 2011</time>
+                    <time datetime="2011-08">August 2011</time>
                 </li>
                 <li data-record-type="article">
-                    <a class="url-src title" href="http://agile.techwell.com/articles/weekly/branching-distraction"
+                    <a class="url-src title"  href="http://agile.techwell.com/articles/weekly/branching-distraction"
                        title="Branching to Distraction">Branching to Distraction</a> a
                     <a class="publication" href="http://www.techwell.com">Techwell</a> original article. Published ,
-                    <time class="pub-date" data-type="pub-date" datetime="2011-07-11">11 July 2011</time>
+                    <time datetime="2011-07-11">11 July 2011</time>
                     [
                     <a class="url-local" href="2011/techwell-2011-07-11.pdf" title="">Local PDF</a> ].
                 </li>
@@ -157,14 +172,14 @@
                     <a class="url-src title" href="2011/Berczuk-2011-cutter-SCM-Build.pdf"
                        title="SCM and Build: Keys to an Agile Lifecycle">SCM and Build: Keys to an Agile Lifecycle</a>
                     An Executive Update published by the Cutter Consortium.
-                    <time class="pub-date" data-type="pub-date" datetime="2011-05">May 2011</time>
+                    <time datetime="2011-05">May 2011</time>
                 </li>
                 <li data-record-type="article">
                     <a class="url-src title" href="http://www.stickyminds.com/s.asp?F=S16766_COL_2"
                        title="Mission Possible: ScrumMaster and Technical Contributor">Mission Possible: ScrumMaster and
                         Technical Contributor</a> a
                     <a class="publication" href="http://www.stickyminds.com">Sticky Minds.com</a> original article.
-                    Published 25 April 2011[
+                    Published <time datetime="2011-04">25 April 2011</time>[
                     <a class="url-local" href="2011/stickyminds-2011-04-25.pdf" title="">Local PDF</a> ].
                 </li>
                 <li data-record-type="article">
@@ -178,10 +193,9 @@
                     <a class="url-src title" href="http://www.stickyminds.com/s.asp?F=S16706_COL_2"
                        title="What Are You Doing?">What
                         Are You Doing?</a> a
-                    <a class="publication title" href="http://www.stickyminds.com">Sticky Minds.com</a> original
-                    article.
+                    <a class="publication" href="http://www.stickyminds.com">Sticky Minds.com</a> original article.
                     Published
-                    <time class="pub-date" data-type="pub-date" datetime=2011-03-14">14 March 2011</time>
+                    <time datetime=2011-03-14">14 March 2011</time>
                     [
                     <a class="url-local" href="2011/stickyminds-2011-03-14.pdf" title="Local PDF">Local PDF</a> ].
                 </li>
@@ -190,7 +204,7 @@
                        href="http://www.cmcrossroads.com/cm-articles/275-articles/13919-agile-teams-care-about-dev-ops"
                        id="DevOpsCMC" title="Agile Teams Care About Dev Ops" target="_blank">Agile Teams Care About Dev
                         Ops</a> in the
-                    <time class="pub-date" data-type="pub-date" datetime="2011-02">Feb 2011</time>
+                    <time datetime="2011-02">Feb 2011</time>
                     issue of
                     <a class="publication" href="http://www.cmcrossroads.com/" title="CMC" target="_top">CM
                         Crossroads</a> .
@@ -202,17 +216,16 @@
                     <a class="url-src title" href="http://www.stickyminds.com/s.asp?F=S16601_COL_2" title="The Value of Really Dumb
         Tests">The Value of Really Dumb Tests</a> a
                     <a href="http://www.stickyminds.com">Sticky Minds.com</a> original article. Published
-                    <time class="pub-date" class="pub-date" data-type="pub-date" datetime="2011-02-07">7 Feb 2011</time>
+                    <time datetime="2011-02-07">7 Feb 2011</time>
                     [
                     <a href="2011/stickyminds-2011-02-08.pdf" title="Local PDF">Local PDF</a> ].
                 </li>
                 <li data-record-type="article">
-                    <a class="url-src title" href="https://www.cmcrossroads.com/article/agile-scm-basics-small-teams">Agile
-                        SCM:
+                    <a class="url-src title" href="https://www.cmcrossroads.com/article/agile-scm-basics-small-teams">Agile SCM:
                         Basics
                         for Small Teams</a> on
                     <a class="publication" href="http://www.cmcrossroads.com.com" title="CMC Website">CM Crossroads</a> , published
-                    <time class="pub-date" data-type="pub-date" datetime="2010-12-14">14 Dec 2010</time>
+                    <time datetime="2010-12-14">14 Dec 2010</time>
                     [
                     <a href="2010/cmc-2010-12a.pdf" title="Local PDF">Local PDF</a> ].
                 </li>
@@ -223,7 +236,7 @@
                         End of Release Branching Strategies Part I: Branching and Code lines</a> , a
                     <a class="publication" href="http://www.stickyminds.com" title="Sticky minds Website">Sticky
                         Minds.com</a> original article. Published
-                    <time class="pub-date" data-type="pub-date" datetime="2010-11-08">8 Nov 2010</time>
+                    <time datetime="2010-11-08">8 Nov 2010</time>
                     [
                     <a class="url-local" href="2010/stickyminds2010-11-08.pdf" title=Local PDF"">Local PDF</a>
                     ].
@@ -234,7 +247,7 @@
                         End of Release Branching Strategies Part II: Release Branches</a> , a
                     <a class="publication" href="http://www.stickyminds.com" title="Sticky minds Website">Sticky
                         Minds.com</a> original article. Published
-                    <time class="pub-date" data-type="pub-date" datetime="2010-12-13">13 Dec 2010</time>
+                    <time datetime="2010-12-13">13 Dec 2010</time>
                     . [
                     <a class="url-local" href="2010/stickyminds-2010-12-13.pdf" title="Local PDF">Local PDF</a>
                     ].
@@ -242,11 +255,10 @@
 
 
                 <li data-record-type="article">
-                    <a class="url-src title" href="2010/IEEE-SW-012-015.pdf" title="We're All in This Together">We're
-                        All in This Together</a>
-                    <span class="description">an
-                        interview with Yi Lv about agile adoption at Nokia Siemens. Part of the Insights series. </span> In the
-                    <time class="pub-date" data-type="pub-date" datetime="2010-11">Nov/Dec 2010</time>
+                    <a class="url-src title" href="2010/IEEE-SW-012-015.pdf" title="We're All in This Together">We're All in This Together</a>
+                    an
+                    interview with Yi Lv about agile adoption at Nokia Siemens. Part of the Insights series. In the
+                    <time datetime="2010-11">Nov/Dec 2010</time>
                     Issue of
                     <a class="publication" href="http://www.computer.org/software" title="IEEE Software">IEEE Software.</a> (article is
                     &copy;
@@ -258,32 +270,30 @@
                     <a class="url-src title" href="2010/cutter-berczuk-part1.pdf"
                        title="Starting Agile Adoption:  Part 1, Quality Assurance">Starting Agile Adoption: Part 1,
                         Quality Assurance</a>
-                    <time class="pub-date" data-type="pub-date" datetime="2010-09">Sep 2010</time>
-                    <span class="description">Part of a 3-Part Executive Update series
-                        published by the Cutter Consortium.</span>
+                    <time datetime="2010-09">Sep 2010</time>
+                    Part of a 3-Part Executive Update series
+                    published by the Cutter Consortium.
                 </li>
                 <li data-record-type="article">
                     <a class="url-src title" href="2010/cutter-berczuk-part2.pdf"
                        title="Starting Agile Adoption: Part 2, Avoiding Common Pitfalls of Planning">Starting Agile
                         Adoption: Part 2, Avoiding Common Pitfalls of Planning"</a>
-                    <time class="pub-date" data-type="pub-date" datetime="2010-11">Nov 2010</time>
-                    <span class="description">Part of a 3-Part Executive Update series
-                        published by the Cutter Consortium.</span>
+                    <time datetime="2010-11">Nov 2010</time>
+                    Part of a 3-Part Executive Update series published by the Cutter Consortium
                 </li>
                 <li data-record-type="article">
                     <a class="url-src title" href="2010/cutter-berczuk-part3.pdfl"
                        title="Starting Agile Adoption: Part 3, Advantages and Pitfalls of Unit Testing">Starting Agile
                         Adoption: Part 3, Advantages and Pitfalls of Unit Testing</a>
-                    <time class="pub-date" data-type="pub-date" datetime="2010-12">Dec 2010</time>
-                    <span class="description">Part of a 3-Part Executive Update series
-                        published by the Cutter Consortium.</span>
+                    <time datetime="2010-12">Dec 2010</time>
+                    Part of a 3-Part Executive Update series published by the Cutter Consortium
                 </li>
 
                 </li>
                 <li data-record-type="article">
                     <a class="url-src title" href="http://www.stickyminds.com/s.asp?F=S15394_MAGAZINE_2" id="SQE200910"
                        title="IDEs and Build Scripts" target="_blank">IDEs and Build Scripts</a> in the
-                    <time class="pub-date" data-type="pub-date" datetime="2009-09">Sept/October 2009</time>
+                    <time datetime="2009-09">Sept/October 2009</time>
                     issue of
                     <a class="publication" href="http://www.bettersoftware.com/magazine"
                        title="Better Software Magazine"
@@ -291,13 +301,12 @@
                     <a class="url-local" href="2009/BetterSoftware2009-09IDEsDraft.pdf" title="">Local PDF</a> ].
                 </li>
                 <li data-record-type="article">
-                    <a class="url-src title" href="http://www.stpcollaborative.com/knowledge/376-agile-scm-for-testers"
-                       id="STP200908"
+                    <a class="url-src title" href="http://www.stpcollaborative.com/knowledge/376-agile-scm-for-testers" id="STP200908"
                        title="Agile SCM For Testers" target="_blank">Agile SCM for Testers</a>
                     in the
-                    <time class="pub-date" data-type="pub-date" datetime="2009-08">August 2009</time>
+                    <time datetime="2009-08">August 2009</time>
                     issue of
-                    <a href="http://www.stpcollaborative.com/magazine" title="STP" target="_top">Software Test and
+                    <a class="publication" href="http://www.stpcollaborative.com/magazine" title="STP" target="_top">Software Test and
                         Performance Magazine</a> .
                     <a href="2009/stpmag-2009-08.pdf" id="STPMAG-200908" name="STPMAG-200908" title="SCM For Testers"
                        target="_top">[Local PDF]</a>
@@ -306,18 +315,16 @@
                     <a class="url-src title" href="http://www.cmcrossroads.com/content/view/12949/264/" id="CMC200905"
                        title="Keep The Change at CM Crossroads" target="_blank">Keep the Change</a>
                     in the
-                    <time class="pub-date" data-type="pub-date" datetime="2009-05">May 2009</time>
+                    <time datetime="2009-05">May 2009</time>
                     issue of
-                    <a class="publication" href="http://www.cmcrossroads.com/" title="CMC" target="_top">CM Crossroads</a> .
+                    <a class="publication"  href="http://www.cmcrossroads.com/" title="CMC" target="_top">CM Crossroads</a> .
                     <a href="docs/cmc/2009-05-change.pdf" title="Keep The Change" target="_top">[Local PDF</a> ]
                 </li>
                 <li data-record-type="article">
-                    <a class="url-src title"
-                       href="https://www.cmcrossroads.com/article/beware-ide-risks-standardizing-one-ide" id="IDEs"
-                       name="IDEs"
+                    <a class="url-src title" href="https://www.cmcrossroads.com/article/beware-ide-risks-standardizing-one-ide" id="IDEs" name="IDEs"
                        title="Beware the IDEs: The Risks of Standardizing on IDEs" target="_blank">Beware the IDEs: The
                         Risks of Standardizing on IDEs</a> in the
-                    <time class="pub-date" data-type="pub-date" datetime="2009-03">March 2009</time>
+                    <time datetime="2009-03">March 2009</time>
                     issue of
                     <a class="publication" href="http://www.cmcrossroads.com/" title="CMC" target="_top">CM
                         Crossroads</a> .
@@ -329,196 +336,193 @@
                     <a class="publication title url-src" href="agile-journal/Agile_Journal-2008-10-Iterations.pdf"
                        title="Agile Journal, Iterations"
                        target="_top">Iterations</a> in the
-                    <time class="pub-date" data-type="pub-date" datetime="2008-10">October 2008</time>
+                    <time datetime="2008-10">October 2008</time>
                     issue of the
-                    <a  class="publication" href="http://www.agilejournal.com/" title="Agile Journal" target="_top">Agile Journal</a> .
+                    <a class="publication" href="http://www.agilejournal.com/" title="Agile Journal" target="_top">Agile Journal</a> .
                 </li>
                 <!-- below need to have title attribs added -->
                 <li data-record-type="article">
-                    <a class="title url-src"
+                    <a class="title"
                        href="http://www.scmpatterns.com/pubs/crossroads-mirror/2008-05-CMCrossroads.pdf"
                        title="Agile Release Management">
-                        <em>Agile Release Management</em>
+                       Agile Release Management
                     </a>
-                    <time class="pub-date" data-type="pub-date" datetime="2008-05">May 2008</time>
+                    <time datetime="2008-05">May 2008</time>
                     issue of <span class="publication">CM Crossroads</span>
 
                 </li>
                 <li data-record-type="article">
-                    <a class="url-serc title" href="docs/bettersw-2008-10.pdf" id="FEEDBACK" name="FEEDBACK" title="Feedback without Fear">Feedback
+                    <a class=" title" href="docs/bettersw-2008-10.pdf" id="FEEDBACK" name="FEEDBACK" title="Feedback without Fear">Feedback
                         without Fear</a> the Last Word of the
-                    <time class="pub-date" data-type="pub-date" datetime="2007-05">May 2007</time>
+                    <time datetime="2007-05">May 2007</time>
                     issue of
-                    <a class="publication" href="http://www.stickyminds.com/" target="_top">Better Software magazine</a> .
+                    <a href="http://www.stickyminds.com/" target="_top">Better Software magazine</a> .
                 </li>
                 <li data-record-type="article">
-                    <a href="docs/cmc/2007-10-AgileSCMisTesting.pdf" title="PDF">
-                        <em>Agile SCM Is Testing</em>
+                    <a class="title title" href="docs/cmc/2007-10-AgileSCMisTesting.pdf" title="PDF">
+                        Agile SCM Is Testing
                     </a> in
                     <a class="publication" href="http://www.cmcrossroads.com/">CM Crossroads</a> ,
-                    <time class="pub-date" data-type="pub-date" datetime="2007-10">October 2007</time>
+                    <time datetime="2007-10">October 2007</time>
                 </li>
                 <li data-record-type="article">
-                    <a href="agileTimesFall2006.pdf" title="The Team that Walked Through Walls">The Team that Walked
+                    <a class="title" href="agileTimesFall2006.pdf" title="The Team that Walked Through Walls">The Team that Walked
                         Through
                         Wallks</a>
                     in the
-                    <time class="pub-date" data-type="pub-date" datetime="2006-09">Fall 2006</time>
+                    <time datetime="2006-09">Fall 2006</time>
                     issue of
-                    <em class="publication">Agile Development Magazine</em>published by the
+                    <em><span class="publication">Agile Development Magazine</span></em>published by the
                     <a href="http://www.agilealliance.org/" title="Agile Alliance">Agile Alliance</a> .
                 </li>
                 <li data-record-type="article">
-                    <a href="docs/cmc/2006-03-PrivateWorkspaces.pdf"
+                    <a class="publication title" href="docs/cmc/2006-03-PrivateWorkspaces.pdf"
                        title="Private Workspaces: Where Development Process Meets CM Process">Private Workspaces: Where
                         Development Process Meets CM Process</a>
                     in the
-                    <time class="pub-date" data-type="pub-date" datetime="2006-03">March 2006</time>
+                    <time datetime="2006-03">March 2006</time>
                     edition of the
                     <a class="publication" href=" http://www.cmcrossroads.com/">Configuration Management Journal</a> .
                 </li>
                 <li data-record-type="article">
-                    <a href="BetterSoftwareFeb2006-8-2.pdf"><em>Breaking with Tradition, Add an Agile Twist to your SCM
-                        Process</em></a> by Steve Berczuk in the
-                    <time class="pub-date" data-type="pub-date" datetime="2006-02">Feb 2006</time>
+                    <a class="publication title" href="BetterSoftwareFeb2006-8-2.pdf">Breaking with Tradition, Add an Agile Twist to your SCM
+                        Process</a> by Steve Berczuk in the
+                    <time datetime="2006-02">Feb 2006</time>
                     Issue of
                     <a class="publication" href="http://www.stickyminds.com/bettersoftware">Better Software Magazine</a> .
                 </li>
                 <li data-record-type="article">
-                    <a href="docs/cmc/2005-02-BuildingEarnestly.pdf" title="The Importance of Building Earnestly"><em>The
-                        Importance of Building Earnestly</em></a> by Steve Berczuk, Robert Cowham &amp; Brad Appleton in
-                    <a class="publication" href="http://www.cmcrossroads.com/">Crossroads News</a>,
-                    <time class="pub-date" data-type="pub-date" datetime="2005-02">February 2005</time>
+                    <a class="publication title" href="docs/cmc/2005-02-BuildingEarnestly.pdf" title="The Importance of Building Earnestly">The
+                        Importance of Building Earnestly</a> by Steve Berczuk, Robert Cowham &amp; Brad Appleton in
+                    <a href="http://www.cmcrossroads.com/">Crossroads News</a>,
+                    <time datetime="2005-02">February 2005</time>
                 </li>
                 <li>
-                    <a href="docs/IllusionOfControl-Dec2004.pdf" title="The Illusion of Control"><em>The Illusion of
-                        Control</em></a> by Steve Berczuk, Robert Cowham &amp; Brad Appleton in
-                    <a href="http://www.cmcrossroads.com/">Crossroads News</a>,
-                    <time class="pub-date" data-type="pub-date" datetime="2004-12">December 2004</time>
+                    <a class="publication title" href="docs/IllusionOfControl-Dec2004.pdf" title="The Illusion of Control">The Illusion of
+                        Control</a> by Steve Berczuk, Robert Cowham &amp; Brad Appleton in
+                    <a class="publication" href="http://www.cmcrossroads.com/">Crossroads News</a>,
+                    <time datetime="2004-12">December 2004</time>
                 </li>
                 <li data-record-type="article">
-                    <a href="docs/agileapr04.pdf" title=" Patterns and Software Configuration Management"> <em>Patterns
+                    <a  class="publication title" href="docs/agileapr04.pdf" title=" Patterns and Software Configuration Management"> Patterns
                         and
-                        Software Configuration Management</em></a> by Steve Berczuk,Steve Konieczka &amp; Brad Appleton
+                        Software Configuration Management</a> by Steve Berczuk,Steve Konieczka &amp; Brad Appleton
                     in
                     <a class="publication" href="http://www.cmcrossroads.com/">Crossroads News</a>,
-                    <time class="pub-date" data-type="pub-date" datetime="2004-04">April 2004</time>
+                    <time datetime="2004-04">April 2004</time>
                 </li>
                 <li data-record-type="article">
-                    <a class="url-src" href="docs/agilejan04.pdf"> <em>Applying Agile SCM to Databases</em></a> by Steve
+                    <a class="title url-src" href="docs/agilejan04.pdf"> Applying Agile SCM to Databases</a> by Steve
                     Berczuk,Steve Konieczka &amp; Brad Appleton in
                     <a class="publication" href="http://www.cmcrossroads.com/">Crossroads News</a>,
-                    <time class="pub-date" data-type="pub-date" datetime="2004-01">January 2004</time>
+                    <time datetime="2004-01">January 2004</time>
                     [
                     <a class="url-local" href="docs/agilejan04.pdf">Local Copy</a> ]
                 </li>
                 <li data-record-type="article">
-                    <em>Context Is Key: The Power of Pattern Languages</em>in the
+                    <a class="title" href="#">Context Is Key: The Power of Pattern Languages </a> in the
                     <a class="publication" href="http://www.cutter.com/itjournal/">Cutter IT Journal</a>
-                    <time class="pub-date" data-type="pub-date" datetime="2003-09">September 2003</time>
-                    Issue. Volume 19 Number 9. <span class="description">Theme issue on
-                    <em>Patterns in Software Development</em>, guest editor Joshua Kerievsky.</span>
+                    <time datetime="2003-09">September 2003</time>
+                    Issue. Volume 19 Number 9. Theme issue on
+                    <em>Patterns in Software Development</em>, guest editor Joshua Kerievsky.
                 </li>
 
                 <li data-record-type="article">
-                    <a class="url-src title" href="docs/agilejul03.html" title="Patterns for Agile SCM">
-                        <em>Patterns for Agile SCM</em>
-                    </a> by Steve Berczuk, Steve Konieczka &amp; Brad Appleton in
-                    <a href="http://www.cmcrossroads.com/">CM Crossroads News</a>,
-                    <time class="pub-date" data-type="pub-date" datetime="2003-07">July, 2003</time>
+                    <a class=" title" href="docs/agilejul03.html" title="Patterns for Agile SCM">
+                        Patterns for Agile SCM
+                    </a> by Steve Berczuk,Steve Konieczka &amp; Brad Appleton in
+                    <a class="publication" href="http://www.cmcrossroads.com/">CM Crossroads News</a>,
+                    <time datetime="2003-07">July, 2003</time>
                 </li>
                 <li data-record-type="article">
-                    <a class="url-src" href="http://www.stickyminds.com/r.asp?F=DART_6484">Agile Codeline Management</a>
+                    <a class=" title url-src" href="http://www.stickyminds.com/r.asp?F=DART_6484">Agile Codeline Management</a>
                     . A
                     <a class="publication" href="http://www.stickyminds.com/">StickyMinds</a> original article.
                     Published
-                    <time class="pub-date" data-type="pub-date" datetime="2003-05-30">May 30, 2003</time>
+                    <time datetime="2003-05-30">May 30, 2003</time>
                     [Version in
                     <a class="url-local" href="AgileBranch.pdf">PDF format</a> .]
                 </li>
                 <li data-record-type="article">
-                    <a class="url-local" href="IEEESW_2003-03.pdf"
+                    <a class="publication title " url-local" href="IEEESW_2003-03.pdf"
                        title="PDF Version of Pragmatic Software Configuration Management article"><em>Pragmatic Software
                         Configuration Management</em></a> by Steve Berczuk. In the
-                    <time class="pub-date" data-type="pub-date" datetime="2003-03">March/April 2003</time>
+                    <time datetime="2003-03">March/April 2003</time>
                     issue of
                     <a class="publication" href="http://www.computer.org/software/">IEEE Software</a> Magazine.
                 </li>
                 <li data-record-type="article">
-                    <em>Software Configuration Management Resources</em>, a
-                    <em>Reference Point</em> article in the
-                    <time class="pub-date" data-type="pub-date" datetime="2003-01">January/February 2003</time>
+                    <a class="title" href=""#">Software Configuration Management Resources</a>, a
+                    <em>Reference Point</em>article in the
+                    <time datetime="2003-01">January/February 2003</time>
                     issue of
-                    <a href="http://www.stqemagazine.com/">STQE Magazine</a> (Volume 5 # 1).
+                    <a class= "publication" href="http://www.stqemagazine.com/">STQE Magazine</a> (Volume 5 # 1).
                 </li>
 
                 <li data-record-type="article">
-                    <a class="url-src title" href="PLoP2001/plop2001-conf.pdf">
-                        <em>Reliable Codelines</em>
-                    </a>. Submitted to the
-                    <a href="http://jerry.cs.uiuc.edu/~plop/plop2001/"> The 2001 Pattern Languages of Programs (PLoP)
+                    <a class=" title" href="PLoP2001/plop2001-conf.pdf">
+                        Reliable Codelines
+                    </a> . Submitted to the
+                    <a class="publication" href="http://jerry.cs.uiuc.edu/~plop/plop2001/"> The 2001 Pattern Languages of Programs (PLoP)
                         conference</a> .
                 </li>
-                <li data-record-type="book-chapter"><span class="authors">Steve Berczuk and Bob Hanmer</span>: Introduction I.
-                    <a href="https://amzn.to/314mDHE"> Pattern
-                       Languages of Program Design 4.</a> Edited
+                <li data-record-type="book-chapter">Steve Berczuk and Bob Hanmer (2000). Introduction I. Pattern Languages of Program Design 4. Edited
                     by
                     Neil Harrison, et al. Reading, MA, Addison Wesley Longman.
-                    <time class="pub-date" data-type="pub-date" datetime="1999-12">1999</time>
                 </li>
                 <li data-record-type="article">
-                    <a href="PLoP2K/workspace.pdf" title="PDF file">
-                        <em>Getting Ready to Work: Patterns for a Developer's Workspace</em>
-                    </a> . In the
+                    <a class="title" href="PLoP2K/workspace.pdf" title="PDF file">
+                        Getting Ready to Work: Patterns for a Developer's Workspace
+                    </a>. In the
                     <a href="http://jerry.cs.uiuc.edu/~plop/plop2k/proceedings/proceedings.html">Proceedings</a> of the
-                    <a href="http://jerry.cs.uiuc.edu/~plop/plop2k/">7th. Pattern Languages of Programs Conference</a> .
+                    <a href="publication" href="http://jerry.cs.uiuc.edu/~plop/plop2k/">7th. Pattern Languages of Programs Conference</a>.
                     Washington University Technical Report number wucs-00-29.
                 </li>
                 <li data-record-type="article">
-                    <a href="PLoP99/softwarereconstruction.pdf"><em>Software Reconstruction: Patterns for Reproducing
-                        Software Builds</em> </a> by Ralph Cabrera,
+                    <a class="title" href="PLoP99/softwarereconstruction.pdf">Software Reconstruction: Patterns for Reproducing
+                        Software Build </a> by Ralph Cabrera,
                     <a href="http://www.bradapp.net/">Brad Appleton</a>, and Steve Berczuk. In the proceedings of the
-                    <a href="http://jerry.cs.uiuc.edu/~plop/plop99/">1999 Pattern Languages of Programming
+                    <a class="publication" href="http://jerry.cs.uiuc.edu/~plop/plop99/">1999 Pattern Languages of Programming
                         Conference</a> .
                 </li>
                 <li data-record-type="paper">
 
-                    <a href="PLoP98/streamedLines.pdf" title="Streamed Lines - PDF" target="_top"><em>Streamed Lines,
+                    <a class="title" href="PLoP98/streamedLines.pdf" title="Streamed Lines - PDF" target="_top"><em>Streamed Lines,
                         Branching Patterns For Parallel Software Development</em></a>
                     with Brad Appleton, Ralph Cabrera, and Robert Orenstein.
                     In the
-                    <a href="https://hillside.net/plop/plop98/final_submissions/">proceedings of the 1998 Pattern
+                    <a class="publication" href="https://hillside.net/plop/plop98/final_submissions/">proceedings of the 1998 Pattern
                         Languages of Programs Conference</a> . Washington University Technical Report #WUCS-98-25.
                 </li>
                 <li data-record-type="article">
 
-                    <a href="CMPatterns_C++Report.pdf"><em>Teamwork and Configuration Management</em></a>
+                    <a class="publication title" href="CMPatterns_C++Report.pdf"><em>Teamwork and Configuration Management</em></a>
                     In the
-                    <time class="pub-date" data-type="pub-date" datetime="1997-07">July/Aug 97</time>
+                    <time datetime="1997-07">July/Aug 97</time>
                     <em>C++ Report</em>(Vol 9 #7 pp28 ff)
                 </li>
-                <li data-record-type="article">Guest Editor,
-                    <a href="http://www.wiley.com/compbooks/object/index.html"><em>Theory and Practice of Object
+                <li data-record-type="editor">Guest Editor,
+                    <a class="title" href="http://www.wiley.com/compbooks/object/index.html"><em>Theory and Practice of Object
                         Systems</em>
                     </a> . Special Issue on Patterns. Volume 2 Number 1 (1996)
-                    <time class="pub-date" data-type="pub-date" datetime="1996-01">1996</time>
+                    <time datetime="1996-01">1996</time>
                     .
                 </li>
-                <li data-record-type="paper">
-                    <a href="PLoP96/plop96.html"><em>Configuration Management Patterns</em></a> . In the proceedings of
-                    the
-                    <a href="http://www.cs.wustl.edu/~schmidt/jointPLoP-96.html">1996 Pattern Languages of Programs</a>
-                    Conference. Washington University Technical Report# WUCS-97-07.
-                    <time class="pub-date" data-type="pub-date" datetime="1997-07">July 1997</time>
-                </li>
                 <li data-record-type="article">
-                    <a href="PLoP95/HTML/BerczukPLoP95.html"><em>Organizational Multiplexing: Patterns for Processing
+                    <a class="title" href="PLoP96/plop96.html"><em>Configuration Management Patterns</em></a> . In the proceedings of
+                    the
+                    <a class="publication" href="http://www.cs.wustl.edu/~schmidt/jointPLoP-96.html">1996 Pattern Languages of Programs</a>
+                    Conference. Washington University Technical Report# WUCS-97-07.
+                    <time datetime="1997-07">July 1997</time>
+                </li>
+                <li data-record-type="book-chapter">
+                    <a class="title" href="PLoP95/HTML/BerczukPLoP95.html"><em>Organizational Multiplexing: Patterns for Processing
                         Satellite Telemetry with Distributed Teams</em></a> . (Also available in
                     <a href="PLoP95/PLoP95.ps">Postscript</a> ). Published in
                     <a href="http://www.amazon.com/dp/0201895277?tag=steveberczuk&amp;link_code=as3&amp;creativeASIN=0201895277&amp;creative=373489&amp;camp=211189">Pattern
                         Languages of Program Design 2</a> .
                 </li>
-                <li data-record-type="book-chapter">
+                <li  data-record-type="book-chapter">
                     <a href="PLoP94/callback.html">
                         <em>Patterns for Separating Assembly and Processing</em>
                     </a> in
@@ -530,8 +534,8 @@
                     <a href="PLoP94/callback.ps">postscript</a> version is also available.
                 </li>
                 <li data-record-type="article">
-                    <a href="./1994/Dec94ieee.pdf">Finding Solutions Through Pattern Languages</a> in the December 1994
-                    <a href="http://www.computer.org/computer/">
+                    <a class="title" href="./1994/Dec94ieee.pdf">Finding Solutions Through Pattern Languages</a> in the December 1994
+                    <a class="publication" href="http://www.computer.org/computer/">
                         <em>IEEE Computer</em>
                     </a> . (Vol 27 #12 pages 75-76).
                 </li>
@@ -541,38 +545,39 @@
         <a name="OTHER" href="#TOP"></a>
         <h2>Other Articles</h2>
         <ul>
-            <li data-record-type="article"><a class="publication" href="cpp/Properties_of_Member_Functions_in_CPP.pdf"
-                                              title="Properties of Member Functions in C++">
+            <li data-record-type="article"><a class="publication title" href="cpp/Properties_of_Member_Functions_in_CPP.pdf"
+                   title="Properties of Member Functions in C++">
                 Properties of Member Functions in C++</a> Dirk Riehle and Steve Berczuk, Unpublished
-                <time class="pub-date" data-type="pub-date" datetime="2000-01">2000</time>
+                <time datetime="2000-01">2000</time>
             </li>
-            <li><a class="publication" href="cpp/Types_of_Member_Functions_in_CPP.pdf"
+            <li data-record-type="article"><a   class="title" href="cpp/Types_of_Member_Functions_in_CPP.pdf"
                    title="Types of Member Functions in C++">
                 Types of Member Functions in C++</a> Dirk Riehle and Steve Berczuk, Unpublished
-                <time class="pub-date" data-type="pub-date" datetime="2000-01">2000</time>
+                <time datetime="2000-01">2000</time>
                 .
             </li>
-            <li data-record-type="article">A Review of
-                <em>A System of Patterns</em>by Buschmann, Meunier, Roherrt, Sommerlad, and Stal, in the
-                <time class="pub-date" data-type="pub-date" datetime="1997-03">March 1997</time>
-                issue of Distributed Object Computing (Vol 1 #2 pp 61 -62)
+            <li data-record-type="article"><a class="title" href="# ">A Review of
+                A System of Patterns by Buschmann, Meunier, Roherrt, Sommerlad, and Stal</a>, in the
+                <time datetime="1997-03">March 1997</time>
+                issue of <span class="publication">Distributed Object Computing (Vol 1 #2 pp 61 -62)</span>
             </li>
-            <li data-record-type="article">A review of Grady Booch's
-                <em>Object Solutions</em> in the
-                <time class="pub-date" data-type="pub-date" datetime="1996-07">July 1996</time>
+            <li data-record-type="article">
+                <a class="title" href="#">A review of Grady Booch's
+                Object Solutions</a> in the
+                <time datetime="1996-07">July 1996</time>
                 issue of
-                <em>Object Magazine</em>(Vol 6 #4 pp 83-84).
+                <em><span class="publication">Object Magazine</span></em>(Vol 6 #4 pp 83-84)
             </li>
             <li data-record-type="article">A review of Robert Martin's
-                <em>Designing Object Oriented C++ Applications using the Booch Method</em> in the
-                <time class="pub-date" data-type="pub-date" datetime="1995-10">October 1995</time>
+                <a class="title" href="#">Designing Object Oriented C++ Applications using the Booch Method</a> in the
+                <time datetime="1995-10">October 1995</time>
                 issue of
-                <em>Object Magazine</em>. (Vol 5 # 6 pp 96 - 97).
+                <em><span class="publication">Object Magazine</span></em>. (Vol 5 # 6 pp 96 - 97).
             </li>
-            <li data-record-type="article">A review of Peter Coad's book:
-                <em>Object Models: Strategies, Patterns and Applications</em>, in
-                <em>Object Oriented Systems</em>(Volume 2 # 3 September 1995)
-                <time class="pub-date" data-type="pub-date" datetime="1995-09">September 1995</time>
+            <li data-record-type="article">
+                <a class="title" href="#"> A review of Peter Coad's book: Object Models: Strategies, Patterns and Applications</a>, in
+                <em><span class="publication">Object Oriented Systems</span></em>(Volume 2 # 3 September 1995)
+                <time datetime="1995-09">September 1995</time>
             </li>
         </ul>
         <h2 id="DISCUSS">Facilitated Discussions</h2>
@@ -581,12 +586,12 @@
                 <a href="http://www.bradapp.net/">Brad Appleton</a> and I facilitated a
                 <a href="http://www.stickyminds.com/s.asp?F=S6476_ROUND_45">round table discussion on Agile Software
                     Configuration Management</a> on
-                <a href="http://www.stickyminds.com/">StickyMinds.com</a> from
-                <time class="pub-date" data-type="pub-date" datetime="2003-06-02">June 2 to July 12, 2003</time>
+                <a class="publication" href="http://www.stickyminds.com/">StickyMinds.com</a> from
+                <time datetime="2003-06-02">June 2 to July 12, 2003</time>
             </li>
         </ul>
-        <p>For interesting reading that I didn't necessarily write, also see a list of
-            <a href="/bookstore/">some of my favorite books</a> .</p>
+            <p>For interesting reading that I didn't necessarily write, also see a list of
+                <a href="/bookstore/">some of my favorite books</a> .</p>
         <p id="COPYRIGHTNOTICE">Copyright © as of the publication date by Steve Berczuk.
             <em>This material is presented to ensure timely dissemination of scholarly and technical work. Copyright and
                 all rights therein are retained by authors or by other copyright holders. All persons copying this
