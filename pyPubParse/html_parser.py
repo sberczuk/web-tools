@@ -1,3 +1,4 @@
+import json
 import re
 
 from bs4 import BeautifulSoup
@@ -11,15 +12,12 @@ def process_article(article):
     if(time is not None):
         timeStamp = time['datetime']
         displayDate = time.get_text()
-
     titleLink = article.select_one('a:is(.title)')
-    #print(titleLink['href'])
     publicationAnchor = article.select_one('a:is(.publication)')
     publicationSpan = article.select_one('span:is(.publication)')
     localUrlAnchor = article.select_one('a:is(.url-local)')
     publicationLink = ''
     publicationName = ''
-
 
     # remove extra whitespace chars inside title string
     title = re.sub("\s+", " ", titleLink.string)
@@ -37,7 +35,6 @@ def process_article(article):
         localLink = localUrlAnchor['href']
         # look for a span or other element with 'publication'
 
-
     articleLink = titleLink["href"]
     # The text of what was there
     bodyContent = re.sub("\s+", " ", article.get_text())
@@ -51,11 +48,37 @@ def process_article(article):
     dataMap['displayDate'] = displayDate
     dataMap['publication'] = publicationName
     dataMap['publicationUrl'] = publicationLink
-    print(dataMap)
+    return dataMap
 
+
+def process_chapter(c):
+    dataMap = dict()
+    type = 'bookChapter'
+    time = c.time
+    displayDate = ''
+    timeStamp = ''
+    if(time is not None):
+        timeStamp = time['datetime']
+        displayDate = time.get_text()
+    titleLink = c.select_one('a:is(.book-chapter)')
+    title = re.sub("\s+", " ", titleLink.string)
+    bookLink = titleLink["href"]
+    # The text of what was there
+        bodyContent = re.sub("\s+", " ", c.get_text())
+    dataMap['type'] = type
+    dataMap['text']  = bodyContent
+    dataMap ['timeStamp'] = timeStamp
+    dataMap['displayDate'] = displayDate
+    dataMap['title'] = title
+    dataMap['url'] = bookLink
+    dataMap['excerptLink'] = ''
+
+    return dataMap
+
+article_f = open('articles.json', 'w+')
+chapters_f = open('chapters.json', 'w+')
 with open("pubs.html") as fp:
     soup = BeautifulSoup(fp)
-    body = soup.find(class_="bodytext")
     # get bodytext div. then search from that.
     # articles = body.find_all(attrs={'data-recordType':'article'})
     # TODO use body OR soup
@@ -65,7 +88,17 @@ with open("pubs.html") as fp:
 
     articles = soup.find_all(attrs={'data-record-type':'article'})
     # print(articles)
+    jsonList = []
     for article in articles:
-        process_article(article)
+        jsonList.append(process_article(article))
+    print(json.dump(jsonList, article_f, sort_keys=True, indent=4))
 
+    chapters = soup.find_all(attrs={'data-record-type':'book-chapter'})
 
+    chapter_list = []
+    for chapter in chapters:
+        chapter_list.append(process_chapter(chapter))
+    print(json.dump(chapter_list, chapters_f, sort_keys=True, indent=4))
+    # output pretty printed JSON To a file
+
+    # Process book and other links
